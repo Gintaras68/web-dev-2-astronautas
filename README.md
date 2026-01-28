@@ -17,6 +17,7 @@ Design: [Astronautas] (https://dribbble.com/shots/5964475-404-Lost-in-Space/atta
 
 - Github pages
 - README / [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- favicon
 - fixed-width content
 - `<header>` and `<footer>` elements
 - FontAwesome icons/fonts
