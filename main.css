@@ -58,9 +58,21 @@ main > img {
 }
 
 h1 {
+  position: relative;
   font-size: 60px;
   font-weight: 700;
   line-height: 0.9;
+}
+
+h1::after {
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  content: '';
+  width: 100px;
+  height: 4px;
+  background-color: #694e95;
+  border-radius: 2px;
 }
 
 h1 > span {
@@ -82,13 +94,14 @@ div > div {
 
 main a {
   display: inline-block;
-  padding: 10px 40px;
+  padding: 0.6em 1.9em;
   color: white;
+  font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #694e95;
   border: 2px solid #694e95;
-  border-radius: 50px;
+  border-radius: 1.4em;
   transition: all 0.2s ease-in-out;
 
   &:hover {
