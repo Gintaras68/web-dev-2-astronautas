@@ -28,7 +28,7 @@ body {
   gap: 20px;
 }
 
-.main-nav a {
+.nav-link {
   color: black;
   text-decoration: none;
   font-size: 16px;
@@ -40,14 +40,14 @@ body {
 
 /* --------   main   ----------- */
 
-.content-wrap {
+.left-column {
   width: 40%;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.content-img {
+.right-column {
   width: 57%;
 }
 
@@ -104,16 +104,25 @@ body {
   }
 }
 
+/* -------   footer   ---------- */
 .social {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 20px;
 }
 
 .soc-link {
   display: block;
   color: gray;
   text-decoration: none;
-  font-size: 18px;
+  line-height: 1em;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: #694e95;
+    transform: scale(1.2);
+  }
 }
 
 .copyrights {
