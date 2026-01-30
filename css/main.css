@@ -7,32 +7,28 @@ body {
   box-sizing: border-box;
 }
 
-header,
-main,
-footer {
+.container {
   display: inline-block;
   width: 800px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: calc((100% - 800px) / 2);
+  /* margin-top: 30px; */
+  /* margin-bottom: 30px; */
+  /* margin-left: calc((100% - 800px) / 2); */
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header {
-}
-
-header > img {
+.logo {
   height: 30px;
 }
 
-header > nav {
+.main-nav {
   display: flex;
   gap: 20px;
 }
 
-header > nav a {
+.main-nav a {
   color: black;
   text-decoration: none;
   font-size: 16px;
@@ -43,56 +39,54 @@ header > nav a {
 }
 
 /* --------   main   ----------- */
-main {
-}
 
-main > div {
+.content-wrap {
   width: 40%;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-main > img {
+.content-img {
   width: 57%;
 }
 
-h1 {
+.title {
   position: relative;
   font-size: 60px;
   font-weight: 700;
   line-height: 0.9;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #694e95;
+    border-radius: 2px;
+  }
+
+  & > span {
+    display: block;
+    color: gray;
+    font-weight: 100;
+  }
 }
 
-h1::after {
-  position: absolute;
-  left: 0;
-  bottom: -16px;
-  content: '';
-  width: 100px;
-  height: 4px;
-  background-color: #694e95;
-  border-radius: 2px;
-}
-
-h1 > span {
-  display: block;
-  color: gray;
-  font-weight: 100;
-}
-
-main p {
+.descr {
   font-size: 14px;
   line-height: 1.4;
   color: grey;
 }
 
-div > div {
+.button-wrap {
   display: flex;
   gap: 20px;
 }
 
-main a {
+.button {
   display: inline-block;
   padding: 0.6em 1.9em;
   color: white;
@@ -110,6 +104,19 @@ main a {
   }
 }
 
-footer {
-  background-color: lightpink;
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.soc-link {
+  display: block;
+  color: gray;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.copyrights {
+  color: grey;
+  font-size: 16px;
 }

@@ -18,12 +18,13 @@
       href="./favicon/apple-touch-icon.png"
     />
     <link rel="manifest" href="./favicon/site.webmanifest" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
-      <img src="./img/logo.png" alt="Logo" />
-      <nav>
+    <header class="container">
+      <img class="logo" src="./img/logo.png" alt="Logo" />
+      <nav class="main-nav">
         <a href="#">About</a>
         <a href="#">Portfolio</a>
         <a href="#">Job</a>
@@ -31,22 +32,30 @@
       </nav>
     </header>
 
-    <main>
-      <div>
-        <h1><span>404</span>Lost in space</h1>
-        <p>
+    <main class="container">
+      <div class="content-wrap">
+        <h1 class="title"><span>404</span>Lost in space</h1>
+        <p class="descr">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           perspiciatis hic voluptatum numquam ea explicabo quae inventore beatae
           asperiores architecto.
         </p>
-        <div>
-          <a href="#">Go Home</a>
-          <a href="#">Back</a>
+        <div class="button-wrap">
+          <a class="button" href="#">Go Home</a>
+          <a class="button" href="#">Back</a>
         </div>
       </div>
-      <img src="./img/astronaut.png" alt="astronaut" />
+      <img class="content-img" src="./img/astronaut.png" alt="astronaut" />
     </main>
 
-    <footer>FOOTER</footer>
+    <footer class="container">
+      <div class="social">
+        <a href="#" class="soc-link fa fa-facebook-square" target="_blank"></a>
+        <a href="#" class="soc-link fa fa-twitter" target="_blank"></a>
+        <a href="#" class="soc-link fa fa-instagram" target="_blank"></a>
+        <a href="#" class="soc-link fa fa-linkedin-square" target="_blank"></a>
+      </div>
+      <p class="copyrights">&copy; - All rights reserved</p>
+    </footer>
   </body>
 </html>
